@@ -1,0 +1,17 @@
+.env
+*.sql.bak
+
+# Local database dumps and migration logs
+/database.sql
+/quest_ojt_db.sql
+/db files/
+/migration_log.txt
+
+# Uploaded customer data; retain only upload-protection files
+/uploads/announcements/*
+!/uploads/announcements/.htaccess
+uploads/attendance/**
+!uploads/attendance/index.php
+!uploads/attendance/.htaccess
+/uploads/profiles/*
+/uploads/requests/*

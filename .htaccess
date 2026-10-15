@@ -1,0 +1,10 @@
+Options -Indexes
+
+<FilesMatch "^(?:\.env|\.env\.example|composer\.(?:json|lock)|package\.json|pnpm-lock\.yaml|yarn\.lock|database\.sql|quest_ojt_db\.sql|migration_log\.txt|db_status\.txt)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "^(?:create_admin\.php|apply_migration\.php|check_db\.php)$">
+    Require all denied
+</FilesMatch>
+
